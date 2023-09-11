@@ -1,0 +1,70 @@
+:root {
+    --oscuro: #0C120C;
+    --claro: #E8FCCF;
+    --verde: #96E072;
+    --rosa: #FCBCB8;
+    --medio: #517664;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Satisfy', cursive;
+  color: var(--claro);
+  background-color: var(--oscuro);
+}
+img {
+  width: 20%;
+}
+
+h1, h2, p, footer {
+  text-align: center;
+}
+
+h1, h2 {
+  text-decoration: underline;
+}
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+ul {
+  text-align: start;
+  font-size: 3rem;
+}
+
+.ingredientes {
+  background-color: var(--rosa);
+  color: var(--medio);
+}
+
+ol {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.map {
+  background-color: var(--verde);
+}
+footer{
+  font-size: 2rem;
+  background-color: var(--verde);
+  color: var(--oscuro);
+}
+
