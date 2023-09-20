@@ -16,13 +16,38 @@ html {
     box-sizing: inherit;
   }
 body {
-  font-family: 'Gloria Hallelujah', cursive;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Lobster', cursive;
   color: var(--claro);
   background-color: var(--oscuro);
 }
 img {
   width: 20%;
+}
+
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--medio);
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+    .nav-principal {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+}
+
+.nav-principal a {
+  display: block;
+  color: var(--claro);
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+}
+.nav-principal a:hover {
+  background-color: var(--rosa);
+  color: var(--medio);
 }
 
 h1, h2, p, footer {
@@ -36,7 +61,7 @@ h1 {
   font-size: 5rem;
 }
 
-h2 {
+h2 a {
   font-size: 3.8rem;
 }
 
@@ -58,10 +83,27 @@ ol {
   text-align: center;
   font-size: 3rem;
 }
-
-.map {
-  background-color: var(--verde);
+.btn-wsp {
+  position: fixed;
+  width: 5.5rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 3rem;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
 }
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background-color: #fff;
+}
+
 footer{
   font-size: 2rem;
   background-color: var(--verde);
